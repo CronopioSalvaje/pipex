@@ -24,16 +24,7 @@ $(OBJS) : $(SRCS)
 	rm *.o
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS)  $(OBJS) -fPIE -lreadline -lcurses -L $(INC) -lft -o $(NAME) -g 
-
-env :
-	$(CC) $(CFLAGS) Srcs/env.c -lreadline -L $(INC) -lft -o env
-
-dir :
-	$(CC) $(CFLAGS) tests/dir.c -lreadline -L $(INC) -lft -o dir
-
-tputs :
-	$(CC) $(CFLAGS) tests/tputs.c -lreadline -lcurses -L $(INC) -lft -o tputs
+	$(CC) $(CFLAGS)  $(OBJS) -L $(INC) -lft -o $(NAME) -g 
 
 clean :
 	rm -f Srcs/*.o

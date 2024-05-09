@@ -1,0 +1,18 @@
+La panoplie complète des redirections est la suivante :
+
+> change la sortie standard de la commande pour la placer
+dans un fichier.
+< change l'entrée standard de la commande pour la prendre
+dans un fichier.
+| branche la sortie standard de la commande de gauche sur
+l'entrée standard de la commande de droite.
+>> change la sortie standard pour l'ajouter à la fin
+d'un fichier existant.
+|| exécuter la commande suivante si la première a
+échoué.
+&& n'exécuter la commande suivante que si la
+première a réussi.
+
+
+
+< in ls -l | wc -l > out

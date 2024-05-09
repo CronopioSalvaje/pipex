@@ -1,0 +1,9 @@
+ls
+test
+
+j'ouvre le fichier et je le place dans un buffer...
+
+je l'envoie dans un pipe et j'envoie les informations qu'il contient dedans
+
+puis, je recupere le flux de la seconde operation et je le réécris dans un nous fichier
+
